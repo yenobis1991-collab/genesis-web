@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Genesis | Páginas web y tiendas online para tu negocio</title>
+<meta name="description" content="Desarrolladora Full Stack. Creo páginas web, tiendas online y sistemas a medida para negocios. Cotización gratis por WhatsApp.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--bg:#070B1A;--card:#101733;--line:#25305C;--ink:#EEF2FF;--mut:#A5B1D6;--cy:#00E5FF;--vi:#7C3AED;--pk:#F472B6;
+--h:'Bricolage Grotesque',Georgia,serif;--b:'Source Sans 3',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--b);padding-top:env(safe-area-inset-top,0px);overflow-x:hidden}
+h1,h2,h3{font-family:var(--h);line-height:1.05;margin:0}
+a{color:inherit}
+.w{max-width:1020px;margin:0 auto;padding:0 20px}
+section{padding:70px 0;position:relative}
+h2{font-size:clamp(2rem,6vw,3rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.g{background:linear-gradient(90deg,var(--cy),var(--pk));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mut);max-width:58ch;margin:0 0 34px;font-size:1.1rem}
+.btn{display:inline-block;padding:15px 28px;border-radius:99px;font-weight:600;text-decoration:none;font-size:1.05rem;transition:transform .2s,box-shadow .2s}
+.btn.p{background:linear-gradient(90deg,var(--cy),#4F8CFF);color:#04101F;box-shadow:0 0 28px rgba(0,229,255,.35)}
+.btn.o{border:2px solid var(--line);color:var(--ink)}
+.btn:hover{transform:translateY(-3px)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--cy);outline-offset:3px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(7,11,26,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:62px}
+.logo{font:800 1.3rem var(--h)}.logo span{color:var(--cy)}
+nav .btn{padding:9px 18px;font-size:.95rem}
+
+/* hero */
+.hero{padding:56px 0 70px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;z-index:0;animation:fl 9s ease-in-out infinite alternate}
+.b1{width:340px;height:340px;background:var(--vi);top:-80px;left:-100px}
+.b2{width:300px;height:300px;background:#0891B2;bottom:-60px;right:-60px;animation-delay:-4s}
+@keyframes fl{to{transform:translate(40px,30px) scale(1.15)}}
+.hero .w{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+.tag{display:inline-block;border:1px solid var(--line);background:rgba(16,23,51,.8);padding:7px 16px;border-radius:99px;font-size:.95rem;margin-bottom:20px}
+.tag::before{content:"● ";color:#34D399}
+.hero h1{font-size:clamp(2.7rem,9vw,5rem);font-weight:800;letter-spacing:-.03em}
+.hero p{font-size:1.2rem;color:var(--mut);max-width:46ch;margin:20px 0 28px}
+.tk{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;color:var(--mut);font-size:.95rem}
+.tk span::before{content:"✓ ";color:var(--cy)}
+/* teléfono */
+.ph{width:250px;margin:0 auto;border:7px solid #1B2550;border-radius:34px;background:#0D1430;padding:14px 12px 18px;box-shadow:0 30px 70px rgba(124,58,237,.45),0 0 0 1px var(--line);animation:up 5s ease-in-out infinite alternate}
+@keyframes up{to{transform:translateY(-14px) rotate(1.5deg)}}
+.ph .n{width:70px;height:6px;border-radius:9px;background:#25305C;margin:0 auto 12px}
+.ph .t{font:800 .95rem var(--h);margin-bottom:8px}
+.ph .ban{height:70px;border-radius:12px;background:linear-gradient(120deg,var(--vi),var(--cy));margin-bottom:10px}
+.ph .pr{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ph .pr div{background:#18214A;border-radius:10px;height:74px;position:relative}
+.ph .pr div::after{content:"";position:absolute;left:8px;right:8px;bottom:8px;height:8px;border-radius:6px;background:#2C3A78}
+.ph .cb{margin-top:10px;background:var(--cy);color:#04101F;text-align:center;border-radius:99px;padding:7px;font-weight:600;font-size:.85rem}
+
+/* tira */
+.st{border-block:1px solid var(--line);background:#0B1128;overflow:hidden;padding:14px 0}
+.st div{display:flex;gap:40px;width:max-content;animation:mq 26s linear infinite;color:var(--mut);font-weight:600}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* tarjetas */
+.gr{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.c:hover{transform:translateY(-6px);border-color:var(--cy);box-shadow:0 12px 40px rgba(0,229,255,.12)}
+.c h3{font-size:1.3rem;margin:12px 0 8px}.c p{margin:0;color:var(--mut)}
+.ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.6rem;background:linear-gradient(135deg,rgba(124,58,237,.35),rgba(0,229,255,.25))}
+
+/* ejemplos */
+.ex{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.ex .bar{display:flex;gap:6px;padding:10px 14px;background:#0B1128}
+.ex .bar i{width:9px;height:9px;border-radius:50%;background:#2C3A78}
+.ex .scr{padding:16px;height:170px}
+.ex .hh{height:60px;border-radius:10px;margin-bottom:10px}
+.ex .ls{height:8px;border-radius:5px;background:#25305C;margin-bottom:7px;width:85%}.ex .ls.s{width:55%}
+.ex .bt{width:90px;height:22px;border-radius:99px;margin-top:8px}
+.ex h3{padding:14px 18px 2px;font-size:1.15rem}.ex p{padding:0 18px 18px;margin:0;color:var(--mut);font-size:.95rem}
+.nota{color:var(--mut);font-size:.9rem;margin-top:14px}
+
+/* oferta */
+.of{background:linear-gradient(120deg,var(--vi),#0891B2);border-radius:26px;padding:42px 26px;text-align:center}
+.of h2{margin-bottom:10px}.of p{margin:0 auto 22px;max-width:50ch;font-size:1.1rem}
+.of .btn{background:#fff;color:#1B1264}
+
+/* pasos */
+ol{list-style:none;margin:0;padding:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));counter-reset:s}
+ol li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}
+ol li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--cy),var(--vi));color:#04101F;font:800 1.2rem var(--h);margin-bottom:12px}
+ol strong{display:block;font:800 1.15rem var(--h);margin-bottom:4px}ol span{color:var(--mut)}
+
+/* precios */
+.pr2{font:800 2.4rem var(--h);margin:8px 0 12px}.pr2 small{font:400 .9rem var(--b);color:var(--mut)}
+.c ul{margin:0;padding-left:18px;color:var(--mut)}
+.c.hot{border:2px solid var(--cy);box-shadow:0 0 40px rgba(0,229,255,.18);position:relative}
+.c.hot::before{content:"Más pedido";position:absolute;top:-14px;left:22px;background:var(--cy);color:#04101F;font-weight:600;font-size:.85rem;padding:3px 14px;border-radius:99px}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}details p{margin:10px 0 0;color:var(--mut)}
+
+.cta{text-align:center;border:1px solid var(--line);border-radius:28px;padding:54px 22px;background:radial-gradient(circle at 50% 0%,rgba(124,58,237,.35),transparent 70%),var(--card)}
+.cta p{color:var(--mut);margin:0 auto 24px;max-width:46ch;font-size:1.1rem}
+footer{padding:30px 0 100px;text-align:center;color:var(--mut);font-size:.95rem}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#1FA855;color:#fff;border-radius:99px;padding:14px 22px;font-weight:600;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.4);z-index:30}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.rv.on{opacity:1;transform:none}
+@media(max-width:780px){.hero .w{grid-template-columns:1fr}.ph{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav><div class="w"><div class="logo">Genesis<span>.dev</span></div>
+<a class="btn p" href="https://wa.me/34685333549?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web">Cotizar</a></div></nav>
+
+<header class="hero">
+<div class="blob b1"></div><div class="blob b2"></div>
+<div class="w">
+<div>
+<span class="tag">Desarrolladora Full Stack · Atención a todo el Perú</span>
+<h1>Tu negocio, <span class="g">vendiendo online</span> desde el celular.</h1>
+<p>Creo páginas web, tiendas online y sistemas a medida para emprendedores y pymes. Diseño moderno, entrega rápida y precios claros.</p>
+<div class="row"><a class="btn p" href="https://wa.me/34685333549?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web">Cotizar gratis por WhatsApp</a><a class="btn o" href="#servicios">Ver servicios</a></div>
+<div class="tk"><span>Cotización en 24 h</span><span>Se ve bien en celular</span><span>Soporte incluido</span></div>
+</div>
+<div class="ph" aria-hidden="true"><div class="n"></div><div class="t">Tu Tienda</div><div class="ban"></div>
+<div class="pr"><div></div><div></div><div></div><div></div></div><div class="cb">Comprar por WhatsApp</div></div>
+</div>
+</header>
+
+<div class="st" aria-hidden="true"><div>
+<span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>SQL</span><span>MongoDB</span><span>APIs REST</span><span>Git y GitHub</span>
+<span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>SQL</span><span>MongoDB</span><span>APIs REST</span><span>Git y GitHub</span>
+</div></div>
+
+<section id="servicios"><div class="w">
+<h2 class="rv">Lo que puedo <span class="g">hacer por ti</span></h2>
+<p class="lead rv">Me encargo de todo el proyecto, del diseño a la publicación, sin que coordines con varias personas.</p>
+<div class="gr">
+<div class="c rv"><div class="ic">🌐</div><h3>Página web o landing</h3><p>Presenta tu negocio, aparece en Google y recibe clientes directo en tu WhatsApp.</p></div>
+<div class="c rv"><div class="ic">🛒</div><h3>Tienda online</h3><p>Tus clientes ven los productos y compran desde su teléfono, con carrito y pagos en línea.</p></div>
+<div class="c rv"><div class="ic">📱</div><h3>Instalable como app</h3><p>Tu web se guarda en la pantalla de inicio del celular y se usa como una app, sin descargar nada.</p></div>
+<div class="c rv"><div class="ic">📋</div><h3>Sistema a medida</h3><p>Reservas, inventario, pedidos y reportes que reemplazan tus Excel y cuadernos.</p></div>
+<div class="c rv"><div class="ic">🔧</div><h3>Arreglos y mejoras</h3><p>Corrijo, acelero o rediseño una web que ya tienes y no te funciona bien.</p></div>
+<div class="c rv"><div class="ic">🛟</div><h3>Mantenimiento mensual</h3><p>Cambios, respaldos y soporte para que tu web nunca se caiga.</p></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="w">
+<h2 class="rv">Ejemplos de <span class="g">diseño</span></h2>
+<p class="lead rv">Así podría verse la web de tu negocio. Todo se adapta a tu marca y colores.</p>
+<div class="gr">
+<div class="ex rv"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><div class="hh" style="background:linear-gradient(120deg,#F472B6,#7C3AED)"></div><div class="ls"></div><div class="ls s"></div><div class="bt" style="background:var(--cy)"></div></div><h3>Tienda de ropa</h3><p>Catálogo, carrito y pedidos por WhatsApp.</p></div>
+<div class="ex rv"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><div class="hh" style="background:linear-gradient(120deg,#F59E0B,#EF4444)"></div><div class="ls"></div><div class="ls s"></div><div class="bt" style="background:#FBBF24"></div></div><h3>Restaurante</h3><p>Carta digital y reservas en línea.</p></div>
+<div class="ex rv"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><div class="hh" style="background:linear-gradient(120deg,#0891B2,#34D399)"></div><div class="ls"></div><div class="ls s"></div><div class="bt" style="background:#fff"></div></div><h3>Servicios y citas</h3><p>Agenda, galería y contacto directo.</p></div>
+</div>
+<p class="nota rv">Ejemplos de diseño ilustrativos, no son clientes reales.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="w"><div class="of rv">
+<h2>20 % de descuento a mis primeros clientes</h2>
+<p>Estoy empezando y quiero que mis primeros proyectos sean un éxito para ti. Escríbeme antes de que se acaben los cupos.</p>
+<a class="btn" href="https://wa.me/34685333549?text=Hola%2C%20quiero%20el%20descuento%20para%20primeros%20clientes">Quiero mi descuento</a>
+</div></div></section>
+
+<section style="padding-top:0"><div class="w">
+<h2 class="rv">Así <span class="g">trabajamos</span></h2>
+<p class="lead rv">Un proceso simple y sin sorpresas.</p>
+<ol>
+<li class="rv"><strong>Conversamos</strong><span>Me cuentas qué necesitas por WhatsApp o videollamada.</span></li>
+<li class="rv"><strong>Cotización clara</strong><span>Precio y plazo cerrados, por escrito, en 24 horas.</span></li>
+<li class="rv"><strong>Desarrollo</strong><span>Te muestro avances y ajustamos juntos.</span></li>
+<li class="rv"><strong>Entrega y soporte</strong><span>Tu proyecto publicado y con ayuda posterior.</span></li>
+</ol></div></section>
+
+<section style="padding-top:0"><div class="w">
+<h2 class="rv">Precios <span class="g">referenciales</span></h2>
+<p class="lead rv">Cada proyecto es distinto; estos son puntos de partida.</p>
+<div class="gr">
+<div class="c rv"><h3>Landing</h3><div class="pr2">S/ 149 <small>desde</small></div><ul><li>1 página a medida</li><li>Adaptada al celular</li><li>Botón de WhatsApp</li></ul></div>
+<div class="c hot rv"><h3>Web completa</h3><div class="pr2">S/ 900 <small>desde</small></div><ul><li>Hasta 5 secciones</li><li>Formulario de contacto</li><li>Dominio y publicación</li></ul></div>
+<div class="c rv"><h3>Tienda o sistema</h3><div class="pr2">S/ 1,800 <small>desde</small></div><ul><li>Carrito y pedidos</li><li>Panel de administración</li><li>Capacitación de uso</li></ul></div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="w">
+<h2 class="rv">Preguntas <span class="g">frecuentes</span></h2>
+<details class="rv"><summary>¿Cuánto demora mi página?</summary><p>Una landing suele estar lista en 3 a 7 días. Webs y tiendas más grandes, entre 2 y 4 semanas.</p></details>
+<details class="rv"><summary>¿Cómo se paga?</summary><p>En 2 partes: 50 % al iniciar y 50 % al entregar. Al cotizar te indico los métodos de pago disponibles.</p></details>
+<details class="rv"><summary>¿Trabajas con clientes de provincias?</summary><p>Sí, trabajo con todo el Perú. Todo se coordina por WhatsApp y videollamada.</p></details>
+<details class="rv"><summary>¿Y si necesito cambios después?</summary><p>Incluyo soporte tras la entrega, y puedes contratar mantenimiento mensual si lo prefieres.</p></details>
+</div></section>
+
+<section style="padding-top:0"><div class="w"><div class="cta rv">
+<h2>Empecemos tu <span class="g">proyecto hoy</span></h2>
+<p>Cuéntame qué necesitas y te respondo con una cotización gratis.</p>
+<a class="btn p" href="https://wa.me/34685333549?text=Hola%2C%20quiero%20cotizar%20un%20proyecto">Escríbeme por WhatsApp</a>
+</div></div></section>
+
+<footer><div class="w">Genesis · <a href="mailto:yenobis1991@gmail.com">yenobis1991@gmail.com</a></div></footer>
+
+<a class="wa" href="https://wa.me/34685333549?text=Hola%2C%20quiero%20cotizar" aria-label="Escribir por WhatsApp">WhatsApp</a>
+
+<script>
+(function(){
+var els=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return}
+var io=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.12});
+els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
