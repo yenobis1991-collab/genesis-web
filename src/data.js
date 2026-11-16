@@ -33,9 +33,12 @@ export const reasons = [
 ]
 
 export const examples = [
-  { title: 'Tienda de ropa', text: 'Catálogo, carrito y pedidos por WhatsApp.', bg: 'linear-gradient(120deg,#F472B6,#7C3AED)', btn: 'var(--cy)' },
-  { title: 'Restaurante', text: 'Carta digital y reservas en línea.', bg: 'linear-gradient(120deg,#F59E0B,#EF4444)', btn: '#FBBF24' },
-  { title: 'Servicios y citas', text: 'Agenda, galería y contacto directo.', bg: 'linear-gradient(120deg,#0891B2,#34D399)', btn: '#fff' },
+  { brand: 'Distribuidora Norte', kind: 'Distribuidora y mayorista', hero: 'Pedidos al por mayor con entrega en 24 h', btn: 'Hacer pedido', url: 'distribuidoranorte.com', c1: '#0F766E', c2: '#34D399', tiles: ['Bebidas', 'Abarrotes', 'Limpieza'] },
+  { brand: 'Moda Luna', kind: 'Tienda de ropa online', hero: 'Nueva colección, envío a todo el país', btn: 'Comprar ahora', url: 'modaluna.com', c1: '#BE185D', c2: '#F472B6', tiles: ['Vestidos', 'Jeans', 'Accesorios'] },
+  { brand: 'Sabor & Brasa', kind: 'Restaurante con carta digital', hero: 'Mira la carta y reserva tu mesa', btn: 'Reservar mesa', url: 'saborybrasa.com', c1: '#B45309', c2: '#F59E0B', tiles: ['Parrillas', 'Entrantes', 'Postres'] },
+  { brand: 'Studio Nova', kind: 'Barbería y estética con citas', hero: 'Reserva tu cita en 1 minuto', btn: 'Pedir cita', url: 'studionova.com', c1: '#4338CA', c2: '#818CF8', tiles: ['Corte', 'Barba', 'Color'] },
+  { brand: 'AutoPro Repuestos', kind: 'Repuestos y accesorios', hero: 'Encuentra el repuesto para tu auto', btn: 'Ver catálogo', url: 'autopro.com', c1: '#B91C1C', c2: '#FB923C', tiles: ['Frenos', 'Aceites', 'Baterías'] },
+  { brand: 'Sonrisa Dental', kind: 'Clínica con agenda online', hero: 'Cuida tu sonrisa, agenda hoy', btn: 'Agendar cita', url: 'sonrisadental.com', c1: '#0891B2', c2: '#67E8F9', tiles: ['Limpieza', 'Ortodoncia', 'Blanqueo'] },
 ]
 
 export const steps = [

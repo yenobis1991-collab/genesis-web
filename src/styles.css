@@ -137,11 +137,18 @@ h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 800; letter-spacing: -0.02e
 .ex { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
 .ex .bar { display: flex; gap: 6px; padding: 10px 14px; background: #0b1128; }
 .ex .bar i { width: 9px; height: 9px; border-radius: 50%; background: #2c3a78; }
-.ex .scr { padding: 16px; height: 170px; }
-.ex .hh { height: 60px; border-radius: 10px; margin-bottom: 10px; }
-.ex .ls { height: 8px; border-radius: 5px; background: #25305c; margin-bottom: 7px; width: 85%; }
-.ex .ls.s { width: 55%; }
-.ex .bt { width: 90px; height: 22px; border-radius: 99px; margin-top: 8px; }
+.ex .bar span { margin-left: 8px; font-size: 0.72rem; color: var(--mut); background: #131b3d; padding: 1px 10px; border-radius: 99px; }
+.gr3 { grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+.mini { margin: 14px; border-radius: 12px; overflow: hidden; background: #f8fafc; color: #0f172a; }
+.mn { display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: #fff; }
+.mn b { font: 800 0.85rem var(--h); margin-right: auto; color: var(--c1); }
+.mn u { width: 22px; height: 5px; border-radius: 4px; background: #cbd5e1; }
+.mh { padding: 18px 14px 20px; background: linear-gradient(120deg, var(--c1), var(--c2)); color: #fff; }
+.mh strong { display: block; font: 800 1.15rem/1.15 var(--h); max-width: 18ch; margin-bottom: 12px; }
+.mh em { font-style: normal; font-weight: 600; font-size: 0.78rem; background: #fff; color: var(--c1); padding: 5px 14px; border-radius: 99px; }
+.mt { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px; }
+.mt div { background: #fff; border-radius: 8px; padding: 6px; font-size: 0.72rem; font-weight: 600; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.mt i { display: block; height: 34px; border-radius: 6px; margin-bottom: 5px; background: linear-gradient(135deg, var(--c2), var(--c1)); opacity: 0.85; }
 .ex h3 { padding: 14px 18px 2px; font-size: 1.15rem; }
 .ex p { padding: 0 18px 18px; margin: 0; color: var(--mut); font-size: 0.95rem; }
 .nota { color: var(--mut); font-size: 0.9rem; margin-top: 14px; }
