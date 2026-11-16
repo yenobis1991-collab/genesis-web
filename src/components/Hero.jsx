@@ -13,7 +13,7 @@ export default function Hero() {
           </h1>
           <p>
             Creo páginas web, tiendas online y sistemas a medida para emprendedores y pymes.
-            Diseño moderno, entrega rápida y precios claros.
+            Diseño moderno, entrega rápida y cotización clara.
           </p>
           <div className="row">
             <a className="btn p" href={waLink('Hola, quiero cotizar una página web')}>

@@ -6,13 +6,13 @@ export default function Offer() {
     <section className="tight">
       <div className="w">
         <Reveal className="of">
-          <h2>20 % de descuento a mis primeros clientes</h2>
+          <h2>Cotización gratis y sin compromiso</h2>
           <p>
-            Estoy empezando y quiero que mis primeros proyectos sean un éxito para ti.
-            Escríbeme antes de que se acaben los cupos.
+            Cuéntame qué necesitas y te respondo en 24 horas con una propuesta clara,
+            con precio y plazo cerrados, adaptada a tu negocio.
           </p>
-          <a className="btn" href={waLink('Hola, quiero el descuento para primeros clientes')}>
-            Quiero mi descuento
+          <a className="btn" href={waLink('Hola, quiero una cotización gratis')}>
+            Quiero mi cotización
           </a>
         </Reveal>
       </div>

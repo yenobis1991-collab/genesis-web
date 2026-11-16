@@ -3,7 +3,7 @@
 // =====================================================
 
 export const contact = {
-  name: 'Genesis',
+  name: 'Siboney',
   email: 'yenobis1991@gmail.com',
   whatsapp: '34685333549', // código de país + número, sin + ni espacios
 }
@@ -45,15 +45,16 @@ export const steps = [
   { title: 'Entrega y soporte', text: 'Tu proyecto publicado y con ayuda posterior.' },
 ]
 
-export const prices = [
-  { title: 'Landing', price: 'S/ 149', hot: false, items: ['1 página a medida', 'Adaptada al celular', 'Botón de WhatsApp'] },
-  { title: 'Web completa', price: 'S/ 900', hot: true, items: ['Hasta 5 secciones', 'Formulario de contacto', 'Dominio y publicación'] },
-  { title: 'Tienda o sistema', price: 'S/ 1,800', hot: false, items: ['Carrito y pedidos', 'Panel de administración', 'Capacitación de uso'] },
+export const packages = [
+  { title: 'Landing', text: 'Una página para presentar tu negocio y recibir clientes por WhatsApp.', hot: false, items: ['1 página a medida', 'Adaptada al celular', 'Botón de WhatsApp'] },
+  { title: 'Web completa', text: 'Varias secciones para mostrar todo lo que ofreces.', hot: true, items: ['Hasta 5 secciones', 'Formulario de contacto', 'Dominio y publicación'] },
+  { title: 'Tienda o sistema', text: 'Para vender en línea o llevar el control de tu negocio.', hot: false, items: ['Carrito y pedidos', 'Panel de administración', 'Capacitación de uso'] },
 ]
 
 export const faqs = [
+  { q: '¿Cuánto cuesta?', a: 'Depende de lo que necesites. Escríbeme por WhatsApp y te envío una cotización gratis, con precio y plazo cerrados antes de empezar.' },
   { q: '¿Cuánto demora mi página?', a: 'Una landing suele estar lista en 3 a 7 días. Webs y tiendas más grandes, entre 2 y 4 semanas.' },
   { q: '¿Cómo se paga?', a: 'En 2 partes: 50 % al iniciar y 50 % al entregar. Al cotizar te indico los métodos de pago disponibles.' },
-  { q: '¿Trabajas con clientes de provincias?', a: 'Sí, trabajo con todo el Perú. Todo se coordina por WhatsApp y videollamada.' },
+  { q: '¿Trabajas con clientes de otros países?', a: 'Sí, trabajo de forma 100 % online con clientes de varios países. Todo se coordina por WhatsApp y videollamada.' },
   { q: '¿Y si necesito cambios después?', a: 'Incluyo soporte tras la entrega, y puedes contratar mantenimiento mensual si lo prefieres.' },
 ]

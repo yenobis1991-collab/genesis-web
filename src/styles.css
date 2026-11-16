@@ -72,7 +72,9 @@ h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 800; letter-spacing: -0.02e
   border-bottom: 1px solid var(--line);
 }
 .nav .w { display: flex; justify-content: space-between; align-items: center; height: 62px; gap: 16px; }
-.logo { font: 800 1.3rem var(--h); text-decoration: none; }
+.logo { display: flex; align-items: center; gap: 10px; font: 800 1.3rem var(--h); text-decoration: none; }
+.logo img { border-radius: 50%; display: block; box-shadow: 0 0 0 1px var(--line); }
+.logo em { font-style: normal; margin-right: -9px; }
 .logo span { color: var(--cy); }
 .nav-links { display: flex; gap: 22px; color: var(--mut); font-weight: 600; }
 .nav-links a { text-decoration: none; }
@@ -168,9 +170,9 @@ ol li::before {
 ol strong { display: block; font: 800 1.15rem var(--h); margin-bottom: 4px; }
 ol span { color: var(--mut); }
 
-/* ---------- Precios ---------- */
-.pr2 { font: 800 2.4rem var(--h); margin: 8px 0 12px; }
-.pr2 small { display: block; font: 600 0.95rem var(--b); color: var(--mut); margin-bottom: 2px; }
+/* ---------- Paquetes ---------- */
+.pk-text { margin-bottom: 14px !important; }
+.cta-row { margin-top: 28px; text-align: center; }
 .c ul { margin: 0; padding-left: 18px; color: var(--mut); }
 .c.hot { border: 2px solid var(--cy); box-shadow: 0 0 40px rgba(0, 229, 255, 0.18); position: relative; }
 .c.hot::before { content: 'Más pedido'; position: absolute; top: -14px; left: 22px; background: var(--cy); color: #04101f; font-weight: 600; font-size: 0.85rem; padding: 3px 14px; border-radius: 99px; }

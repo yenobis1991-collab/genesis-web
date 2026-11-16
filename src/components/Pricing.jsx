@@ -1,24 +1,21 @@
 import Reveal from './Reveal.jsx'
-import { prices } from '../data.js'
+import { packages, waLink } from '../data.js'
 
 export default function Pricing() {
   return (
-    <section className="tight" id="precios">
+    <section className="tight" id="paquetes">
       <div className="w">
         <Reveal as="h2">
-          Precios <span className="g">referenciales</span>
+          Qué incluye <span className="g">cada proyecto</span>
         </Reveal>
         <Reveal as="p" className="lead">
-          Cada proyecto es distinto; estos son puntos de partida.
+          Cada negocio es distinto. Cuéntame qué necesitas y te envío una cotización gratis.
         </Reveal>
         <div className="gr">
-          {prices.map((p) => (
+          {packages.map((p) => (
             <Reveal key={p.title} className={p.hot ? 'c hot' : 'c'}>
               <h3>{p.title}</h3>
-              <div className="pr2">
-                <small>Desde</small>
-                {p.price}
-              </div>
+              <p className="pk-text">{p.text}</p>
               <ul>
                 {p.items.map((it) => (
                   <li key={it}>{it}</li>
@@ -27,6 +24,11 @@ export default function Pricing() {
             </Reveal>
           ))}
         </div>
+        <Reveal className="cta-row">
+          <a className="btn p" href={waLink('Hola, quiero una cotización para mi negocio')}>
+            Pedir mi cotización gratis
+          </a>
+        </Reveal>
       </div>
     </section>
   )
