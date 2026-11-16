@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="blob b2" />
       <div className="w hero-grid">
         <div>
-          <span className="tag">Desarrolladora Full Stack · Atención a todo el Perú</span>
+          <span className="tag">Desarrolladora Full Stack · Trabajo 100 % online</span>
           <h1>
             Tu negocio, <span className="g">vendiendo online</span> desde el celular.
           </h1>
